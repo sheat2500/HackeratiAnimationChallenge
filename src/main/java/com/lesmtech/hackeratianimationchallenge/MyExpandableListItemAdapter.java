@@ -1,6 +1,7 @@
 package com.lesmtech.hackeratianimationchallenge;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -16,7 +17,6 @@ public class MyExpandableListItemAdapter extends ExpandableListItemAdapter<Integ
 
 
     private Context context;
-    private Integer expaned_position;
 
     protected MyExpandableListItemAdapter(Context context) {
         super(context, R.layout.activity_expandablelistitem_card, R.id.activity_expandablelistitem_card_title, R.id.activity_expandablelistitem_card_content);
@@ -41,21 +41,10 @@ public class MyExpandableListItemAdapter extends ExpandableListItemAdapter<Integ
     @Override
     public View getContentView(int i, View view, ViewGroup viewGroup) {
 
-        TextView v = (TextView) view;
-        if (v == null) {
-            v = new TextView(context);
-        }
-        v.setText("asdasdasd");
-        return v;
-    }
-
-
-    public Integer getExpaned_position() {
-        return expaned_position;
-    }
-
-    public void setExpaned_position(Integer expaned_position) {
-        this.expaned_position = expaned_position;
+        LayoutInflater layoutInflater = android.view.LayoutInflater.from(context);
+        View v = layoutInflater.inflate(R.layout.activity_expanded_content,viewGroup,false);
+        ((TextView) v).setText("I am an expanded filed!");
+       return v;
     }
 
 }

@@ -36,25 +36,7 @@ public class MainActivity extends Activity {
 
         mListView.setAdapter(alphaInAnimationAdapter);
 
-        // Expanding an item should 'collapse' any items that had already been expanded
-        mExpandableListItemAdapter.setExpandCollapseListener(new ExpandableListItemAdapter.ExpandCollapseListener() {
-            @Override
-            public void onItemExpanded(int i) {
-
-                Integer item_position = mExpandableListItemAdapter.getExpaned_position();
-
-                if (item_position == null || item_position == i) {
-                    mExpandableListItemAdapter.setExpaned_position(i);
-                } else {
-                    mExpandableListItemAdapter.collapse(item_position);
-                    mExpandableListItemAdapter.setExpaned_position(i);
-                }
-            }
-
-            @Override
-            public void onItemCollapsed(int i) {
-            }
-        });
+        mExpandableListItemAdapter.setLimit(1);
 
         Toast.makeText(this, "Click any item to expand or collapse", Toast.LENGTH_LONG).show();
     }
