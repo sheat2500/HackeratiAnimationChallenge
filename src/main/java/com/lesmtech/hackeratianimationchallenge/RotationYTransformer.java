@@ -18,8 +18,6 @@ public class RotationYTransformer implements ViewPager.PageTransformer {
             view.setAlpha(0);
 
         } else if (position <= 1) { // [-1,1]
-            // Modify the default slide transition to shrink the page as well
-
             view.setAlpha(Math.abs(1 - Math.abs(position)));
             view.setRotationY(180 * position);
         } else { // (1,+Infinity]
