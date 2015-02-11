@@ -44,13 +44,10 @@ public class MyExpandableListFragment extends Fragment {
                     }
 
                     @Override
-                    @DebugLog
                     public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
                         boolean isShowing = mActionBar.isShowing();
-
                         /*
-
                         if: scroll up
                         else: scroll down
 
@@ -87,8 +84,6 @@ public class MyExpandableListFragment extends Fragment {
         mListView.setAdapter(alphaInAnimationAdapter);
 
         mExpandableListItemAdapter.setLimit(1);
-
-        Toast.makeText(getActivity(), "Click any item to expand or collapse", Toast.LENGTH_LONG).show();
 
         return rootView;
     }

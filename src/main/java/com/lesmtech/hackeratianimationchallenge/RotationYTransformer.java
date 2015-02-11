@@ -3,6 +3,8 @@ package com.lesmtech.hackeratianimationchallenge;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+import hugo.weaving.DebugLog;
+
 /**
  * Created by Te on 2/7/15.
  */
