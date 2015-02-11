@@ -33,9 +33,9 @@ The most challenging task is from the last bulletin: Had two options either usin
 Through reading the documents and searching from internet, I found ViewPager is more extenstive and has the best performance on customized animation with touch gestures.  
 
 ## Demo 
-![alt tag] https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic1.png?raw=true
-![alt tag] https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic2.png?raw=true
-![alt tag] https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic3.png?raw=true
+![alt tag](https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic1.png?raw=true)
+![alt tag](https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic2.png?raw=true)
+![alt tag](https://github.com/sheat2500/HackeratiAnimationChallenge/blob/master/demo/pic3.png?raw=true)
 
 ## Reference
 [ListViewAnimation by nhaarman](https://github.com/nhaarman/ListViewAnimations)
