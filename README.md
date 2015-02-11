@@ -27,7 +27,7 @@ More Info:
 5.  Questions are permitted
 
 ## Learned from this Challenge
-The most challenging task is from the last bulletin: At first, I had two options either using 
+The most challenging task is from the last bulletin: Had two options either using 
 [Card Flip](http://developer.android.com/training/animation/cardflip.html) and [ViewPager](http://developer.android.com/training/animation/screen-slide.html)
 
 Through reading the documents and searching from internet, I found ViewPager is more extenstive and has the best performance on customized animation with touch gestures.  
